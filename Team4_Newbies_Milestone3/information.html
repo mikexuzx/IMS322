@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Newbies</title>
+
+	<meta charset="utf-8">
+	<title>Newbies</title>
+	<link rel="shortcut icon" href="images/newbies.png">
+	<link rel="stylesheet" href="styles/informationis.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+
+	<script>
+	$(function() {
+			$("#image_list a").click(function(evt) {
+				//image Swap
+        let newURL = $(this).attr("href");
+				$("#image").fadeOut(200, function() {
+					$("#image").attr("src", newURL).fadeIn(200);
+				})
+				evt.preventDefault();
+			})
+		})
+</script>
+</head>
+
+<body>
+	<!-- nav section -->
+	<header>
+		<img src="images/newbies.png" alt="Team Image">
+			<h1>Newbies</h1>
+	</header>
+
+	<nav id="nav_bar">
+		<li><a href="home.html">Home</a></li>
+		<li><a class="current" href="information.html">Information</a></li>
+		<li><a href="techcost.html">Common Technology Costs</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+		<li><a href="mobile.html">Team Members</a></li>
+	</nav>
+	<aside>
+		<!-- side bar section -->
+		<br><br><br>
+		<h1>Things To Think About</h1>
+			<ul>
+				<li>Is technology really our future?</li>
+				<li>What is technology?</li>
+				<li>Why is technology so difficult to use?</li>
+				<li>What are important aspects of technology?</li>
+				<li>What are the top technologies today?</li>
+			</ul>
+		<h2>Technology Trends of 2021</h2>
+			<ul>
+				<li>Artificial Intelligence</li>
+				<li>5G and enhanced connectivity</li>
+				<li>Edge computing</li>
+				<li>Internet of behaviors (IoB)</li>
+				<li>Quantum computing</li>
+			</ul>
+	</aside>
+
+<br><br>
+	<!-- header section -->
+		<h1>Information</h1>
+			<h2>Introducing the technology.</h2>
+		<!-- image_list -->
+<section class="main">
+    <ul id="image_list">
+			<li><a href="images/tech1.jpg">
+				<img src="thumbnails/tech1.jpg" alt=""></a></li>
+		<li><a href="images/tech2.jpg">
+				<img src="thumbnails/tech2.jpg" alt=""></a></li>
+		<li><a href="images/tech3.jpg">
+				<img src="thumbnails/tech3.jpg" alt=""></a></li>
+		<li><a href="images/tech4.jpg">
+				<img src="thumbnails/tech4.jpg" alt=""></a></li>
+		<li><a href="images/tech5.jpg">
+				<img src="thumbnails/tech5.jpg" alt=""></a></li>
+		<li><a href="images/tech6.jpg">
+				<img src="thumbnails/tech6.jpg" alt=""></a></li>
+    </ul>
+	<p>
+		<img src="images/tech6.jpg" alt="" id="image">
+	</p>
+</section>
+
+
+
+<!-- footer section -->
+	<footer>
+		<p>&copy; IMS322 Newbies Team</p>
+	</footer>
+</body>
+
+</html>

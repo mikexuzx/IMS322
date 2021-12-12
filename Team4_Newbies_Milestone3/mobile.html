@@ -1,0 +1,195 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <title>Newbies</title>
+   <link rel="shortcut icon" href="images/newbies.png">
+   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+   <link href="styles.css" rel="stylesheet" type="text/css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ </head>
+
+ <body>
+   <div data-role="page" id="home" data-theme="b">
+     <header data-role="header" data-theme="b">
+       <h1>Newbies</h1>
+       <div data-role="navbar">
+      <ul>
+        <li><a href="home.html" data-icon="home" data-ajax="false">Home</a></li>
+        <li><a href="information.html" data-icon="info" data-theme="w" data-ajax="false">Information</a></li>
+        <li><a href="techcost.html" data-icon="shop" data-theme="w" data-ajax="false">Tech Cost</a></li>
+        <li><a href="faq.html" data-icon="bullets" data-theme="w" data-ajax="false">FAQ</a></li>
+        <li><a href="contactus.html" data-icon="comment" data-theme="w" data-ajax="false">Contact Us</a></li>
+        <li><a href="mobile.html" data-icon="user" data-theme="w" class="ui-btn-active">Team Members</a></li>
+      </ul>
+      </div>
+     </header>
+
+     <!-- add the code for a split button list here -->
+     <section data-role="content" data-theme="b">
+       <div class="content-primary">
+         <!-- add data-role ="listview"> inside <ul> -->
+         <ul data-role="listview" data-inset="true" data-filter="true">
+
+           <!-- add the code for adding images, name, title of Agnes., and dialog box to provide details -->
+           <li data-role="list-divider">Team Leader</li>
+           <li>
+             <a href="#">
+               <img src="images/Mike.jpg" alt="Mike">
+               <h3>Zhengxiang Xu</h3>
+               <p>Team Leader</p>
+             </a>
+             <a href="#mike" data-rel="true" data-transition="pop" title="Contact Us">Contact Us</a>
+           </li>
+           <li data-role="list-divider">Team Members</li>
+           <li>
+             <a href="#">
+               <img src="images/Caleb.jpeg" alt="Caleb">
+               <h3>Caleb Adelman</h3>
+               <p>Team Member</p>
+             </a>
+             <a href="#caleb" data-dialog="true" data-transition="pop" title="Contact Us">Contact Us</a>
+           </li>
+           <li>
+             <a href="#">
+               <img src="images/Tyler.JPG" alt="Tyler">
+               <h3>Tyler Bonawitz</h3>
+               <p>Team Member</p>
+             </a>
+             <a href="#tyler" data-rel="true" data-transition="pop" title="Contact Us">Contact Us</a>
+           </li>
+           <li>
+             <a href="#">
+               <img src="images/Lauren.jpeg" alt="Lauren">
+               <h3>Lauren Johnson</h3>
+               <p>Team Member</p>
+             </a>
+             <a href="#lauren" data-rel="true" data-transition="pop" title="Contact Us">Contact Us</a>
+           </li>
+           <li>
+             <a href="#">
+               <img src="images/LaDonna.JPG" alt="LaDonna">
+               <h3>LaDonna Watkins</h3>
+               <p>Team Member</p>
+             </a>
+             <a href="#ladonna" data-rel="true" data-transition="pop" title="Contact Us">Contact Us</a>
+           </li>
+         </ul>
+       </div>
+     </section>
+
+     <footer data-role="footer" data-theme="b">
+       <h4>&copy; IMS322 Newbies Team</h4>
+     </footer>
+   </div>
+
+   <!-- mike -->
+   <div data-role="page" id="mike" data-theme="b">
+     <header data-role="header" data-theme="b">
+       <h1>Newbies</h1>
+     </header>
+
+     <section data-role="content" data-theme="b">
+       <h3>Zhengxiang Xu</h3>
+       <img src="images/Mike.jpg" alt="Mike" style="width:228px;height:228px;">
+       <h4>Zhengxiang Xu<br>Team Leader - Skeleton + Home Page + Mobile Page</h4>
+       <p>Hi, my name is Zhengxiang Xu who is the Newbies team leader. I am a junior at Miami University majoring in Emerging Technology in Business + Design and minoring in Architecture and Interior Design Studies. I am a graphic designer with a
+         passion for building engaging and meaningful experiences for users. I have particular strengths in analytics, communications, content creation, digital marketing, advertising, and user experience. I am fluent in English and Chinese, and I
+         have studied abroad in the U.S. since August 2019.</p>
+       <a href="mailto:xuz76@miamioh.edu" data-role="button" class="ui-bar" data-icon="mail">Email Zhengxiang</a>
+       <a href="#home" data-direction="reverse" data-role="button" data-icon="home" data-theme="b">Back to Home</a>
+     </section>
+
+     <footer data-role="footer" data-theme="b">
+       <h4>&copy; IMS322 Newbies Team</h4>
+     </footer>
+   </div>
+
+   <!-- caleb -->
+   <div data-role="page" id="caleb" data-theme="b">
+     <header data-role="header" data-theme="b">
+       <h1>Newbies</h1>
+     </header>
+
+     <section data-role="content" data-theme="b">
+       <h3>Caleb Adelman</h3>
+       <img src="images/Caleb.jpeg" alt="Caleb" style="width:228px;height:228px;">
+       <h4>Caleb Adelman<br>Team Member - FAQ Page</h4>
+       <p>I am a sophomore and I major in Emerging Tech in Business & Design. I am from Tenafly, New Jersey and I like watching basketball and football.</p>
+       <a href="mailto:adelmacj@miamioh.edu" data-role="button" class="ui-bar" data-icon="mail">Email Caleb</a>
+       <a href="#home" data-direction="reverse" data-role="button" data-icon="home" data-theme="b">Back to Home</a>
+     </section>
+
+     <footer data-role="footer" data-theme="b">
+       <h4>&copy; IMS322 Newbies Team</h4>
+     </footer>
+   </div>
+
+   <!-- tyler -->
+   <div data-role="page" id="tyler" data-theme="b">
+     <header data-role="header" data-theme="b">
+       <h1>Newbies</h1>
+     </header>
+
+     <section data-role="content" data-theme="b">
+       <h3>Tyler Bonawitz</h3>
+       <img src="images/Tyler.JPG" alt="Tyler" style="width:228px;height:228px;">
+       <h4>Tyler Bonawitz<br>Team Member - Home Page</h4>
+       <p>I am a Senior ETBD major with a focus in art and interaction. I also study 2d art such as painting, sketching, and printmaking. I plan to work in games in the future.</p>
+       <a href="mailto:bonawitj@miamioh.edu" data-role="button" class="ui-bar" data-icon="mail">Email Tyler</a>
+       <a href="#home" data-direction="reverse" data-role="button" data-icon="home" data-theme="b">Back to Home</a>
+     </section>
+
+     <footer data-role="footer" data-theme="b">
+       <h4>&copy; IMS322 Newbies Team</h4>
+     </footer>
+   </div>
+
+   <!-- lauren -->
+   <div data-role="page" id="lauren" data-theme="b">
+     <header data-role="header">
+       <h1>Newbies</h1>
+     </header>
+
+     <section data-role="content" data-theme="b">
+       <h3>Lauren Johnson</h3>
+       <img src="images/Lauren.jpeg" alt="Lauren" style="width:228px;height:228px;">
+       <h4>Lauren Johnson<br>Team Member - Information Page</h4>
+       <p>Hi! I am Lauren, a group member of the Newbies. I am from Columbus, Ohio. I am a junior at Miami University with a major of Emerging Technology in Business and Design with a Digital focus. I love listening to music, I've been getting into
+         K-Pop and Indie music recently and they are my current favorites! In my free time, I like to play video games like Valorant, Stardew Valley, and Animal Crossing. Nice to meet everyone!</p>
+       <a href="mailto:john1392@miamioh.edu" data-role="button" class="ui-bar" data-icon="mail">Email Lauren</a>
+       <a href="#home" data-direction="reverse" data-role="button" data-icon="home" data-theme="b">Back to Home</a>
+     </section>
+
+     <footer data-role="footer" data-theme="b">
+       <h4>&copy; IMS322 Newbies Team</h4>
+     </footer>
+   </div>
+
+   <!-- ladonna -->
+   <div data-role="page" id="ladonna" data-theme="b">
+     <header data-role="header">
+       <h1>Newbies</h1>
+     </header>
+
+     <section data-role="content" data-theme="b">
+       <h3>LaDonna Watkins</h3>
+       <img src="images/LaDonna.JPG" alt="LaDonna" style="width:228px;height:228px;">
+       <h4>LaDonna Watkins<br>Team Member - Technology Cost + Bug Fixes</h4>
+       <p>Hi my name is Ladonna Watkins!! I am a 22 year old senior here at Miami University, majoring in Interior Design and minoring in Emerging Technology, Business, and Design! After graduating K hope to travel the world and see interesting and historic places.</p>
+       <a href="mailto:watkinl4@miamioh.edu" data-role="button" class="ui-bar" data-icon="mail">Email LaDonna</a>
+       <a href="#home" data-direction="reverse" data-role="button" data-icon="home" data-theme="b">Back to Home</a>
+     </section>
+
+     <footer data-role="footer" data-theme="b">
+       <h4>&copy; IMS322 Newbies Team</h4>
+     </footer>
+   </div>
+
+ </body>
+
+ </html>

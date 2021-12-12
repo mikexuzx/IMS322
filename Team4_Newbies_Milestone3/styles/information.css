@@ -1,0 +1,194 @@
+
+/* type selectors */
+article, section, figure, footer, header, nav, aside {
+  display: block;
+}
+
+html {
+  background-image: top, white 0%, #f8de9f 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  width: 962px;
+  background-color: #fff2d4;
+  margin: 15px auto;
+  padding: 15px 25px;
+}
+
+section, aside, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+section, aside {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+
+a {
+  font-weight: bold;
+}
+
+a:link {
+  color: gray;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d6d6d6;
+}
+
+a:hover, a:focus {
+  color: orange;
+}
+
+ul {
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+li {
+  padding-bottom: 0.25em;
+}
+
+p {
+  padding-bottom: 0.5em;
+}
+
+em {
+  font-weight: bold;
+}
+
+/* the styles for the header */
+header {
+  padding-bottom: 2em;
+  border-bottom: 2px solid #f8de9f;
+}
+
+header h1 {
+  color: #f8de9f;
+  text-shadow: 2px 3px 0 orange;
+  margin-left: 120px;
+  margin-bottom: 0.25em;
+}
+
+header img {
+  float: left;
+  width: 113.5px;
+  height: 113.5px;
+}
+
+/* the styles for the navigation bar */
+#nav_bar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #f8de9f;
+}
+
+#nav_bar li {
+   float:left;
+}
+
+#nav_bar li a {
+   display: block;
+   color: #000000;
+   font-weight:bold;
+   padding: 5px 15px;
+   text-decoration: none;
+}
+
+#nav_bar li a:hover {
+   background-color: orange;
+   color: white;
+}
+
+#nav_bar a:visited {
+ color: orange;
+}
+
+/* the styles for the section */
+section {
+  width: 580px;
+  padding-right: 20px;
+  float: left;
+}
+
+section h1 {
+  margin-bottom: 0.35em;
+}
+
+section h2 {
+  margin-bottom: 0.35em;
+}
+section img {
+  float: left;
+  width: 600px;
+  height: 400px;
+}
+
+.img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+}
+
+/* the styles for the sidebar */
+aside {
+  width: 270px;
+  border-left: px solid #f8de9f;
+  float: right;
+  padding-left: 30px;
+}
+
+aside h1 {
+  font-size: 1.2em;
+  color: #f8de9f;
+  text-shadow: 1px 2px 0 orange;
+  padding-bottom: 0.5em;
+}
+
+aside h2 {
+  font-size: 1.2em;
+  color: #f8de9f;
+  text-shadow: 1px 2px 0 orange;
+  padding-bottom: 0.5em;
+}
+
+aside p {
+  margin-bottom: 0.5em;
+}
+
+#contact_us {
+  margin-top: 1em;
+}
+
+#date_passed {
+  color: gray;
+}
+
+/* the styles for the footer */
+footer {
+  clear: both;
+  margin-top: 1em;
+  border-top: 1px solid #f8de9f;
+  padding-top: 0.7em;
+}
+
+footer p {
+  font-size: 60%;
+  text-align: right;
+}
