@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Newbies</title>
+	<link rel="shortcut icon" href="images/newbies.png">
+	<link rel="stylesheet" href="styles/home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<script>
+	function imageswap(evt) {
+		 document.getElementById("image").src = this.href;
+		 document.getElementById("caption").innerHTML = this.title;
+	 if(evt.preventDefault) {evt.preventDefault();}
+	 else {evt.returnValue = false;}
+	}
+
+	window.onload = function() {
+		 let images = document.getElementById("image_list").getElementsByTagName("a");
+		 for (i in images) {
+				images[i].onclick = imageswap;
+		 }
+	}
+		</script>
+</head>
+
+<body>
+	<header>
+		<img src="images/newbies.png" alt="Team Image">
+			<h1>Newbies</h1>
+	</header>
+	<nav id="nav_bar">
+			<li><a class="current" href="home.html">Home</a></li>
+			<li><a href="information.html">Information</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+	</nav>
+	<section>
+		<h1>Welcome</h1>
+		<h2>Technology is the future.</h2>
+		<section id="gallery">
+	    <ul id="image_list">
+	        <li><a href="images/home1.jpg"  title="" id="first_link">
+	        	<img src="thumbnails/home1.jpg" width =60px height=40px alt=""></a></li>
+	        <li><a href="images/home2.jpg" title="">
+	        	<img src="thumbnails/home2.jpg" width =60px height=40px alt=""></a></li>
+	        <li><a href="images/home3.jpg" title="">
+	        	<img src="thumbnails/home3.jpg" width =60px height=40px alt=""></a></li>
+	        <li><a href="images/home4.jpg" title="">
+	        	<img src="thumbnails/home4.jpg" width =60px height=40px alt=""></a></li>
+	        <li><a href="images/home5.jpg" title="">
+	        	<img src="thumbnails/home5.jpg" width =60px height=40px alt=""></a></li>
+	    </ul>
+	<h2 id="caption"></h2>
+	    <p><img src="images/home1.jpg" width =500px height=300px alt="" id="image"></p>
+				</section>
+</section>
+<aside>
+		<br><br><br>
+		<h1>Artificial Intelligence Websites</h1>
+			<ul>
+				<li><a href="https://www.aitrends.com/" target="_blank">AI Trend</a></li>
+				<li><a href="https://ai.googleblog.com/" target="_blank">Google AI Blog</a></li>
+				<li><a href="https://blogs.microsoft.com/ai/" target="_blank">Microsoft - The AI Blog</a></li>
+				<li><a href="https://openai.com/blog/" target="_blank">OpenAI Blog</a></li>
+				<li><a href="https://experiments.withgoogle.com/" target="_blank">Experiments with Google</a></li>
+			</ul>
+		<h2>Newbies Are:</h2>
+			<ul>
+				<li>Caleb Adelman</li>
+				<li>Tyler Bonawitz</li>
+				<li>Lauren Johnson</li>
+				<li>Ladonna Watkins</li>
+				<li>Zhengxiang Xu</li>
+			</ul>
+	</aside>
+
+<div>
+	<h2>The Horizon</h2>
+	<br>
+	<p>
+		Technology is an ever-present truth of human existence - one that hurdles further forward into the future with every day. New and emerging
+		technologies break the bounds of what was thought impossible yesterday. Explore this site to learn more about the current leading technologies
+		and their creators, as well as the Emerging Technology Showcase below.
+	</p>
+	<br><br>
+</div>
+
+<div>
+	<h2>Emerging Technology Showcase</h2>
+	<p class="subtitle">Artificial Intelligence</p>
+	<img src="images/techback.jpg">
+	<br>
+	<p>
+		Artificial intelligence is one of the most prominent and quickly-growing fields of emerging technology today. It has allowed for so many new innovations
+		such as self-driving cars and trial operations for actual "Robotaxis", new achievements in quantum computing, and breakthroughs in natural language
+		processing with chatbots and virtual assistants, just to name a few. To learn more about these technologies and others, explore our website further, or explore
+		the links to the right.
+	</p>
+
+	<br><br>
+</div>
+
+	<footer>
+		<p>&copy; IMS322 Newbies Team</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/flickerplate.css" rel="stylesheet" type="text/css">
+	<script src="js/min/hammer-v2.0.3.js"></script>
+<script src="js/min/flickerplate.js"></script>
+</head>
+<body>
+	<div class="flicker-example">
+	<ul>
+		<li data-background="apple1.jpg">
+			<div class="flick-title">Apple Products</div>
+			<div class="flick-sub-text">Packaging</div>
+		</li>
+		<li data-background="apple2.jpg">
+			<div class="flick-title">Apple Ecosystem</div>
+			<div class="flick-sub-text">iPhone + AirPods</div>
+		</li>
+		<li data-background="apple3.jpeg">
+			<div class="flick-title">Apple Accessories</div>
+			<div class="flick-sub-text">Simple and beautiful</div>
+		</li>
+	</ul>
+</div>
+<script>
+new flickerplate({
+	selector: '.flicker-example',
+	animation:'transition-fade',
+	arrows: true,
+	theme: 'dark'
+});
+</script>
+	<script src="js/min/flickerplate.js"></script>
+</body>
+</html>
